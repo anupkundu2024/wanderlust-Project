@@ -1,0 +1,55 @@
+<% layout("/layouts/boilerplate") %>
+<form
+  method="POST"
+  action="/login"
+  class="container col-md-6 mx-auto mt-5 p-4 bg-white border-0 shadow"
+>
+  <h2 class="text-center mb-4">Log In to Your Account</h2>
+
+  <!-- Username -->
+  <div class="mb-4">
+    <label for="username" class="form-label text-secondary">Username</label>
+    <input
+      id="username"
+      name="username"
+      placeholder="Enter your username"
+      type="text"
+      class="form-control form-control-lg"
+      required
+    />
+  </div>
+
+  <!-- Password -->
+  <div class="mb-4">
+    <label for="password" class="form-label text-secondary">Password</label>
+    <input
+      id="password"
+      name="password"
+      placeholder="Enter your password"
+      type="password"
+      class="form-control form-control-lg"
+      required
+    />
+  </div>
+
+  <div class="mb-4 form-check">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      id="rememberMe"
+      name="rememberMe"
+    />
+    <label class="form-check-label" for="rememberMe">Remember me</label>
+    <!-- <a href="/forgot-password" class="float-end text-decoration-none"
+      >Forgot password?</a
+    > -->
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+    Log In
+  </button>
+  <p class="text-center text-muted small">
+    Don't have an account?
+    <a href="/signup" class="text-decoration-none">Sign up</a>
+  </p>
+</form>
